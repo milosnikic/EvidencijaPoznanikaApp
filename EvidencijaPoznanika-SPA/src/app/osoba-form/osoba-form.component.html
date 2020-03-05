@@ -1,0 +1,86 @@
+<div class="container">
+  <form [formGroup]="osobaForm">
+    <div class="form-group">
+      <label for="maticniBroj">Матични број</label>
+      <input
+        type="text"
+    
+        class="form-control"
+        id="maticniBroj"
+        
+        formControlName="maticniBroj"
+      />
+    </div>
+    <div class="form-group">
+      <label for="name">Име</label>
+      <input
+        type="text"
+        
+        class="form-control"
+        id="name"
+    
+        formControlName="ime"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="prezime">Презиме</label>
+      <input type="text" class="form-control" id="prezime" formControlName="prezime"/>
+    </div>
+
+    <div class="form-group">
+      <label for="visina">Висина</label>
+      <input type="number" class="form-control" id="visina"  formControlName="visina"/>
+    </div>
+
+    <div class="form-group">
+      <label for="tezina">Тежина</label>
+      <input type="number" class="form-control" id="tezina"  formControlName="tezina"/>
+    </div>
+
+    <div class="form-group">
+      <label for="bojaOciju">Изаберите боју очију</label>
+      <select class="ml-5" id="bojaOciju" formControlName="bojaOciju">
+        <option value="null"> </option>
+        <option value="Plave">Плаве</option>
+        <option value="Zelene">Зелене</option>
+        <option value="Kestenjaste">Кестењасте</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="telefon">Телефон</label>
+      <input type="text" class="form-control" id="telefon" formControlName="telefon" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Епошта</label>
+      <input type="email" class="form-control" id="email" formControlName="email"/>
+    </div>
+
+    <div class="form-group">
+      <label for="rodjendan">Датум рођења</label>
+      <input type="date" class="form-control" id="rodjendan" formControlName="rodjendan"/>
+    </div>
+
+    <div class="form-group">
+      <label for="adresa">Адреса</label>
+      <input type="text" class="form-control" id="adresa" formControlName="adresa"/>
+    </div>
+
+    <div class="form-group">
+      <label for="prebivaliste">Изаберите пребивалиште</label>
+      <select class="ml-5" id="prebivaliste" formControlName="prebivaliste">
+        <option value="Beograd">Београд</option>
+        <option value="Smederevo">Смедерево</option>
+        <option value="Pirot">Пирот</option>
+        <option value="Bor">Бор</option>
+        <option value="Prijepolje">Пријепоље</option>
+        <option value="Sombor">Сомбор</option>
+      </select>
+    </div>
+
+    <button *ngIf="osoba === null" type="submit" class="btn btn-lg btn-success" [disabled]="!osobaForm.valid" (click)="sendFormValues()">Додај</button>
+    <button *ngIf="osoba !== null" type="submit" class="btn btn-lg btn-info" [disabled]="!osobaForm.valid" (click)="sendUpdateValues()">Измени</button>
+  </form>
+</div>

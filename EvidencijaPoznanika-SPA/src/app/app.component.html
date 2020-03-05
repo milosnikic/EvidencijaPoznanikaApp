@@ -1,0 +1,91 @@
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h1 class="display-4 text-center">
+      Добродошли у апликацију за вођење евиденције познаника!
+    </h1>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <button class="btn btn-lg btn-primary" [disabled]="osoba !== null" (click)="addPerson()">
+        Додај познаника
+      </button>
+      <button
+        class="ml-5 btn btn-lg btn-outline-secondary"
+        (click)="showSmederevci()"
+      >
+        Познаници из Смедерева
+      </button>
+      <button
+        class="ml-5 btn btn-lg btn-outline-secondary"
+        (click)="showPunoletni()"
+      >
+        Пунолетни познаници
+      </button>
+      <button class="ml-5 btn btn-lg btn-outline-secondary" (click)="showAll()">
+        Сви познаници
+      </button>
+    </div>
+    <div *ngIf="showPersons; else addForm">
+      <div class="row">
+        <div class="col col-md-6 text-center mt-4">
+          <h4>Средња старост свих познаника: {{srednjaStarost}}</h4>
+        </div>
+        <div class="col col-md-6 text-center mt-4">
+          <h4>Максимална висина свих познаника: {{maxVisina}}</h4>
+        </div>
+      </div>
+      <table style="width: 100%;" class="mt-5">
+        <tr>
+          <th>Редни број</th>
+          <th>Матични број</th>
+          <th>Име</th>
+          <th>Презиме</th>
+          <th>Висина (цм)</th>
+          <th>Тежина (кг)</th>
+          <th>Боја очију</th>
+          <th>Телефон</th>
+          <th>Е-пошта</th>
+          <th>Рођендан</th>
+          <th>Адреса</th>
+          <th>Пребивалиште</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr *ngFor="let osoba of osobe; index as i">
+            <td>{{i + 1}}</td>
+            <td>{{osoba.maticniBroj}}</td>
+            <td>{{osoba.ime}}</td>
+            <td>{{osoba.prezime}}</td>
+            <td>{{osoba.visina}}</td>
+            <td>{{osoba.tezina}}</td>
+            <td>{{osoba.bojaOciju}}</td>
+            <td>{{osoba.telefon}}</td>
+            <td>{{osoba.email}}</td>
+            <td>{{osoba.rodjendan | date: 'dd/MM/yyyy'}}</td>
+            <td>{{osoba.adresa}}</td>
+            <td>{{osoba.prebivaliste}}</td>
+            
+            <td>
+              <a
+                style="cursor: pointer;"
+                class="text-info"
+                (click)="updatePerson(osoba.id)"
+                >Измени</a
+              >
+            </td>
+            <td>
+              <a
+                style="cursor: pointer;"
+                class="text-danger"
+                (click)="removePerson(osoba.id)"
+                >Уклони</a
+              >
+            </td>
+          </tr>
+      </table>
+    </div>
+    <ng-template #addForm>
+      <app-osoba-form [osoba]="osoba"></app-osoba-form>
+    </ng-template>
+  </div>
+</div>
