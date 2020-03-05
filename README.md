@@ -9,8 +9,8 @@
 
 > Podaci.sql
 
-
->Након тога, потребно је из командне линије ући у фолдер где се налазе сва три пројекта. *EvidencijaPoznanikaApp.API*, *EvidencijaPoznanikaApp-SPA* i *EvidencijaPoznanikaTest*
+Након тога, потребно је из командне линије ући у фолдер где се налазе сва три пројекта.
+> *EvidencijaPoznanikaApp.API*, *EvidencijaPoznanikaApp-SPA* i *EvidencijaPoznanikaTest*
 
 За покретање ВЕБ апликације потребно урадити
 ============================================
