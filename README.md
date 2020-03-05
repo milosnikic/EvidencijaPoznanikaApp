@@ -10,6 +10,12 @@
 
 > FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\EvidencijaPoznanika.mdf' 
 
+Након тога, потребно је у класи EvidencijaPoznanikaContext линију 42 прилагодити сопственој машини.
+
+> optionsBuilder.UseSqlServer("Server=DEV-MILOSNI;Database=EvidencijaPoznanika;Trusted_Connection=True;");
+
+Заменити тако да конекциони стринг одговара вашем рачунару.
+
 Је потребно заменити одговарајућом путањом на вашем рачунару, где је инсталиран SQL Server.
 Након што је схема базе успешно креирана потребно је попунити тесним подацима. 
 
@@ -24,6 +30,7 @@
 ============================================
 ```bash
 cd EvidencijaPoznanikaApp-SPA/
+npm install #како би се све потребне библиотеке подесиле
 ng serve -o
 ```
 
