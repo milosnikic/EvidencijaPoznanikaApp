@@ -8,11 +8,13 @@
 
 У самој скрипти је потребно изменити две линије, које дефинишу путање складиштења фајлова.
 
-> FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\EvidencijaPoznanika.mdf' 
+> FILENAME = N'*C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA*\EvidencijaPoznanika.mdf' 
 
 Након тога, потребно је у класи EvidencijaPoznanikaContext линију 42 прилагодити сопственој машини.
 
-> optionsBuilder.UseSqlServer("Server=DEV-MILOSNI;Database=EvidencijaPoznanika;Trusted_Connection=True;");
+> optionsBuilder.UseSqlServer("Server=*DEV-MILOSNI*;Database=EvidencijaPoznanika;Trusted_Connection=True;");
+
+Као и у *appsettings.json* датотеци
 
 Заменити тако да конекциони стринг одговара вашем рачунару.
 
