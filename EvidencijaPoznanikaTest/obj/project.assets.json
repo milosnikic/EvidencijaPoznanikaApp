@@ -6710,11 +6710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanikaTest\\EvidencijaPoznanikaTest.csproj",
+      "projectUniqueName": "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanikaTest\\EvidencijaPoznanikaTest.csproj",
       "projectName": "EvidencijaPoznanikaTest",
-      "projectPath": "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanikaTest\\EvidencijaPoznanikaTest.csproj",
+      "projectPath": "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanikaTest\\EvidencijaPoznanikaTest.csproj",
       "packagesPath": "C:\\Users\\milos.nikic\\.nuget\\packages\\",
-      "outputPath": "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanikaTest\\obj\\",
+      "outputPath": "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanikaTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6733,8 +6733,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj": {
-              "projectPath": "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj"
+            "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj": {
+              "projectPath": "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj"
             }
           }
         }
