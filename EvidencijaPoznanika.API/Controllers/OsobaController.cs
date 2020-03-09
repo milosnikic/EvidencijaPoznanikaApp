@@ -4,6 +4,7 @@ using EvidencijaPoznanika.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EvidencijaPoznanika.API.Controllers
 {
@@ -12,11 +13,17 @@ namespace EvidencijaPoznanika.API.Controllers
     public class OsobaController : ControllerBase
     {
         private readonly EvidencijaPoznanikaContext _dbContext;
-
+        
+        [ActivatorUtilitiesConstructor]
         public OsobaController(EvidencijaPoznanikaContext dbContext)
         {
             _dbContext = dbContext;
         }
+
+        public OsobaController ()
+	    {
+
+	    }
 
         [HttpGet("addNumbers")]
         public int? AddNumbers(List<int> numbers)
@@ -45,7 +52,7 @@ namespace EvidencijaPoznanika.API.Controllers
         public async Task<IActionResult> GetOsoba(long id)
         {
             var param = new SqlParameter("@Id", id);
-            var osoba = await _dbContext.Osoba.FromSqlInterpolated($"exec selOSOBA @Id = {param}").FirstOrDefaultAsync();
+            var osoba = await _dbContext.Osoba.FromSqlInterpolated($"exec selOSOBA @Id = {param}").ToListAsync();
             if (osoba == null)
             {
                 return BadRequest("Specified user does not exist");

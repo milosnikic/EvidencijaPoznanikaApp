@@ -129,3 +129,8 @@ C:\Milos\Dotnet\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcore
 C:\Milos\Dotnet\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcoreapp3.1\EvidencijaPoznanikaTest.csproj.CopyComplete
 C:\Milos\Dotnet\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcoreapp3.1\EvidencijaPoznanikaTest.dll
 C:\Milos\Dotnet\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcoreapp3.1\EvidencijaPoznanikaTest.pdb
+C:\Milos\Dotnet\TKS\CODE\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcoreapp3.1\EvidencijaPoznanikaTest.csprojAssemblyReference.cache
+C:\Milos\Dotnet\TKS\CODE\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcoreapp3.1\EvidencijaPoznanikaTest.AssemblyInfoInputs.cache
+C:\Milos\Dotnet\TKS\CODE\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcoreapp3.1\EvidencijaPoznanikaTest.AssemblyInfo.cs
+C:\Milos\Dotnet\TKS\CODE\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcoreapp3.1\EvidencijaPoznanikaTest.dll
+C:\Milos\Dotnet\TKS\CODE\EvidencijaPoznanikaApp\EvidencijaPoznanikaTest\obj\Debug\netcoreapp3.1\EvidencijaPoznanikaTest.pdb
