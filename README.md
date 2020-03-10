@@ -32,7 +32,7 @@
 
 ## Преинсталација
 Како би се веб апликација и C# апликација покренуле, неопходне су следеће верзије софтвера (На наведеним верзијама је тестирана апликација - није проверена компатибилност са новијим верзијама!):
->[dotnet sdk 3.1.101] (https://dotnet.microsoft.com/download/dotnet-core/3.1)
+>[dotnet sdk 3.1.101](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
 >[node v10.16.3](https://nodejs.org/en/download/releases/)
 
