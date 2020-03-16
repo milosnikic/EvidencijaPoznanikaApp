@@ -8,3 +8,7 @@ cd home/sqlscript
 // Kako bi se podesila putanja za MS SQL Server potrebno je pogledati IP adresu docker container-adresu
 sudo docker inspect [ID]
 // IPAdress pogledati i postaviti na port 1433 na koji je povezan docker container
+// Nakon toga putanju je potrebno izmeniti
+
+Server=DEV-MILOSNI;Database=EvidencijaPoznanika;Trusted_Connection=True; // Ukloniti Trusted_Connection i dodati kredencijali ze logovanje, zameniti adresu servera
+--> Server=172.17.0.3,1433;Database=EvidencijaPoznanika;User=SA;Password=Milo5996
