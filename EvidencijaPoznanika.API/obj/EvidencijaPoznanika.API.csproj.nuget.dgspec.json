@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj": {}
+    "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj": {}
   },
   "projects": {
-    "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj": {
+    "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj",
+        "projectUniqueName": "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj",
         "projectName": "EvidencijaPoznanika.API",
-        "projectPath": "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj",
+        "projectPath": "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\EvidencijaPoznanika.API.csproj",
         "packagesPath": "C:\\Users\\milos.nikic\\.nuget\\packages\\",
-        "outputPath": "C:\\Milos\\Dotnet\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\obj\\",
+        "outputPath": "C:\\Milos\\Dotnet\\TKS\\CODE\\EvidencijaPoznanikaApp\\EvidencijaPoznanika.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
