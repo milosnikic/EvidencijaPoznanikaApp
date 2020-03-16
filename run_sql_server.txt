@@ -5,7 +5,7 @@ cd home/sqlscript
 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Milo5996" -i EvidencijaPoznanika.sql
 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Milo5996" -i Podaci.sql
 
-// Kako bi se podesila putanja za MS SQL Server potrebno je pogledati IP adresu docker container-adresu
+// Kako bi se podesila putanja za MS SQL Server potrebno je pogledati IP adresu docker container-a
 sudo docker inspect [ID]
 // IPAdress pogledati i postaviti na port 1433 na koji je povezan docker container
 // Nakon toga putanju je potrebno izmeniti
